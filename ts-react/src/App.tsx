@@ -1,33 +1,18 @@
 import Greet from "./componenets/Greet"
-import Person from "./componenets/Person"
-import PresonList from "./componenets/PresonList"
+import Heading from "./componenets/Heading"
+import Oscar from "./componenets/Oscar"
+import Status from "./componenets/Status"
 
 function App() {
-  const personName = {
-    first: 'Bruce',
-    last: 'Wayne'
-  }
-
-  const nameList = [
-    {
-      first: 'Bruce',
-      last: 'Wayne'
-    },
-    {
-      first: 'Clark',
-      last: 'Kent'
-    },
-    {
-      first: 'Princess',
-      last: 'Diane'
-    }
-  ]
-
+  
   return (
     <div className="App">
-      <Greet name='karol' messegeCount={10} isLogin={false} />
-      <Person name={personName} />
-      <PresonList names={nameList}/>
+      <Status status="loading"/>
+      <Heading>Placeholder text</Heading>
+      <Oscar>
+        <Heading>Oscar goes to Leonadro Dicaprio</Heading>
+      </Oscar>
+      <Greet name="Karol"  isLogin={false}/>
     </div>
   )
 }

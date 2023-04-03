@@ -1,10 +1,11 @@
 type GreetProps = {
     name: string
-    messegeCount: number
+    messegeCount?: number
     isLogin: boolean
 }
 
 function Greet(props: GreetProps) {
+    const {messegeCount = 0} = props
     return (
         <div>
             <h2>
