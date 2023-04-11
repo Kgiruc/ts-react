@@ -4,7 +4,7 @@ type ContainerProps = {
 
 function Container(props: ContainerProps) {
   return (
-    <div >
+    <div style={props.styles}>
         Container
     </div>
   );
