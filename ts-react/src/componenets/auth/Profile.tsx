@@ -1,8 +1,10 @@
-import React from 'react'
+export type ProfileProps = {
+  name: string
+}
 
-function Profile() {
+function Profile({ name }: ProfileProps) {
   return (
-    <div>Profile Private component</div>
+    <div>Profile Private component. Name is {name}</div>
   )
 }
 

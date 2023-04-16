@@ -1,8 +1,14 @@
 import Login from "./Login"
+import { ProfileProps } from "./Profile"
 
-function Private({ isLoggedIn, Component}) {
+type PrivateProps = {
+  isLoggedIn: boolean
+  component: React.ComponentType<ProfileProps>
+}
+
+function Private({ isLoggedIn, component: Component }: PrivateProps) {
   if (isLoggedIn) {
-    return <Component />
+    return <Component name='chidori' />
   } else {
     return <Login />
   }
