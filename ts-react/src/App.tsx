@@ -7,27 +7,17 @@ import Private from "./componenets/auth/Private";
 import List from "./componenets/generics/List";
 import RandomNumber from "./componenets/restriction/RandomNumber";
 import Toast from "./componenets/templeteliterals/Toast";
+import Button from "./componenets/html/Button";
+import Input from "./componenets/html/Input";
 
-
-const listelo = [
-  {
-    first: 'elo',
-    last: 'zero'
-  }, 
-  {
-    first: 'belo',
-    last: 'fero'
-  }, 
-  {
-    first: 'helo',
-    last: 'perospero'
-  },
-]
 
 function App() {
   return (
     <div className="App">
-    <Toast position='center' />
+      <Button varient="primary" onClick={() => console.log('clicker')}>
+        Primary Button
+      </Button>
+      <Input />
     </div>
   );
 }
