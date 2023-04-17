@@ -1,8 +1,9 @@
+import Greet from "../Greet"
 
-function customComponent() {
+function CustomComponent(props: React.ComponentProps<typeof Greet>) {
   return (
-    <div>customComponent</div>
+    <div>{props.isLogin}</div>
   )
 }
 
-export default customComponent
+export default CustomComponent
