@@ -21,6 +21,7 @@ type Zero = RandomNumberType & {
 }
 
 type RandomNumberProps = PositiveNumber | NegativeNumber | Zero
+
 function RandomNumber({
     value,
     isPositive,

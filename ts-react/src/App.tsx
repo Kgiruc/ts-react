@@ -6,6 +6,7 @@ import Profile from "./componenets/auth/Profile";
 import Private from "./componenets/auth/Private";
 import List from "./componenets/generics/List";
 import RandomNumber from "./componenets/restriction/RandomNumber";
+import Toast from "./componenets/templeteliterals/Toast";
 
 
 const listelo = [
@@ -26,7 +27,7 @@ const listelo = [
 function App() {
   return (
     <div className="App">
-    <RandomNumber value={12} isPositive isNegative isZero/>
+    <Toast position='center' />
     </div>
   );
 }
